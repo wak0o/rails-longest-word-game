@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <div class="col-xs-12">
+    <div class="col-xs-12 text-center">
       <h1>Votre Score !</h1>
       <h2>Resultat</h2>
       <h3>Votre mot: <%= @attempt %></h3>
@@ -8,6 +8,7 @@
       <h3>Traduction: <%= @result[:translation] %></h3>
       <h3>Votre Score: <%= @result[:score]%></h3>
       <h3><%= @result[:message]%> </h3>
+      <h4><%= link_to "Rejouer", game_path, class: "btn btn-primary" %></h4>
     </div>
   </div>
 </div>
